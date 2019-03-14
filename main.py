@@ -3,6 +3,7 @@ Menunjukkan semua sintaksis Python
 """
 from geometry.segitiga import hitung_luas_segitiga
 from geometry.persegi_panjang import hitung_luas_persegi_panjang
+from geometry_class.segitiga import Segitiga
 
 print('Hello World!')
 
@@ -58,3 +59,11 @@ print(hitung_luas_segitiga('Segitiga 4', 3, 6))
 # MODULARISASI TAHAP 2: PEMBUATAN PACKAGE
 print(hitung_luas_persegi_panjang('Persegi 1', 10, 2))
 print(hitung_luas_persegi_panjang('Persegi 2', 5, 3))
+
+# MODULARISAI TAHAP 3: PEMBUATAN CLASS
+segitiga1 = Segitiga('Segitiga 1 as class', 50, 3)
+print(segitiga1.title)
+print(segitiga1.hitung_luas())
+segitiga2 = Segitiga('Segitiga 2 as class', 7, 2)
+print(segitiga2.title)
+print(segitiga2.hitung_luas())
